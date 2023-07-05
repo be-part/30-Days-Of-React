@@ -37,21 +37,36 @@ formatDateTime = function () {
 // 4. Declare a function name swapValues. This function swaps value of x to y.
 
 const swapValues = function (x, y) {
-    console.log('x' = y, 'y' = x)
+    console.log(`x = ${y}, y = ${x}`)
 }
 
 // 5. Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
 
 const reverseArray = function (array) {
-    for (let i = array.length-1; i !== 0; i--) {
+    if (array.length === 0 ) {
+        console.log([])
+    }
+
+    for (let i = array.length-1; i !== -1; i--) {
             console.log(array[i])
     }
 }
 
 
 // 6. Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
+const capitalizeArray = function (array) {
+    const newArray = []
+    array.forEach((word) => {
+        const capitalised = word[0].toUpperCase() + word.slice(1)
+
+        newArray.push(capitalised)
+    })
+    console.log(newArray)
+}
+
 
 // 7. Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
+
 
 // 8. Declare a function name removeItem. It takes an index parameter and it returns an array after removing an ite
 
