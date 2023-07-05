@@ -2,33 +2,49 @@
 
 const {users, products} = require('./users-products.js');
 
-const currentDate = new Date()
+// 1. Create an object literal called personAccount. It has firstName, lastName, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods.
 
 const personAccount = {
     firstName: '',
     lastName: '',
-    incomes: '',
-    expenses: '',
+    incomes: [23, 34],
+    expenses: [7, 5],
+
     totalIncome: function () {
-
+        let total = 0
+        for (let i=0; i<this.incomes.length; i++) {
+            total += this.incomes[i];
+        }
+        console.log(total)
+        return total
     },
+
     totalExpense: function () {
-
+        let total = 0
+        for (let i=0; i<this.expenses.length; i++) {
+            total += this.expenses[i];
+        }
+        console.log(total)
+        return total
     },
+
     accountInfo: function () {
-
+        console.log(personAccount)
     },
-    addIncome: function () {
-
+    addIncome: function (income) {
+        this.incomes.push(income)
     },
-    addExpense: function () {
-
+    addExpense: function (expense) {
+        this.expenses.push(expense)
     },
     accountBalance: function () {
-
+        incomeTotal = this.totalIncome()
+        expenseTotal = this.totalExpense()
+        console.log(incomeTotal-expenseTotal)
     }
 }
 
+const currentDate = new Date()
 
 formatDateTime = function () {
     const year = currentDate.getFullYear()
@@ -37,11 +53,13 @@ formatDateTime = function () {
     const hours = currentDate.getHours()
     const minutes = currentDate.getMinutes()
     let amPm = 'AM'
+    let formatHours = hours
     let formatDay = day
     let formatMonth = month
 
     if (hours > 11) {
         amPm = 'PM'
+        formatHours = hours - 12
     } else amPm = 'AM'
 
     if (day < 10) {
@@ -52,9 +70,8 @@ formatDateTime = function () {
         formatMonth = `0${month}`
     }
 
-    return `${formatDay}/${formatMonth}/${year} ${hours}:${minutes} ${amPm}`
+    return `${formatDay}/${formatMonth}/${year} ${formatHours}:${minutes} ${amPm}`
 }
-
 
 
 // a. Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he has already an account.

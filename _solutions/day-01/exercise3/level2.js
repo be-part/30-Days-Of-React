@@ -52,6 +52,7 @@ const users = {
     }
   }
 
+// 1. Find the person who has many skills in the users object.
 getMostSkilled = function () {
     let maxSkillsPerson = null;
     let maxSkillsCount = 0;
@@ -67,9 +68,36 @@ getMostSkilled = function () {
 console.log(maxSkillsPerson);
 }
 
-getMostSkilled();
+// 2. Count logged in users, count users having greater than equal to 50 points.
+
+const countLoggedIn = function () {
+
+  let loggedInTotal = 0
+
+  for (const user in users) {
+    if (users[user].isLoggedIn === true) {
+      loggedInTotal ++; 
+    }
+  }
+  
+  console.log(loggedInTotal)
+}
+
+const countMoreThan50 = function () {
+
+  let moreThan50Total = 0
+
+  for (const user in users) {
+    if (users[user].points >= 50) {
+      moreThan50Total ++; 
+    }
+  }
+  
+  console.log(moreThan50Total)
+}
 
 
+// 3. Set your name in the users object without modifying the original users object
 const copyUsers = Object.assign({}, users)
 
 const newUser = {
@@ -82,8 +110,10 @@ const newUser = {
   
 copyUsers['NewUser'] = newUser;
 
-
+// 4. Get all keys or properties of users object
 const keys = Object.keys(copyUsers)
+
+// 5. Get all the values of users object
 const values = Object.values(copyUsers)
-const entries = Object.entries(copyUsers)
+
 
