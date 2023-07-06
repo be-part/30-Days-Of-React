@@ -67,11 +67,60 @@ const capitalizeArray = function (array) {
 
 // 7. Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
 
+const addItem = function (item) {
+    const itemsArray = ['orange', 'apple', 'blueberry']
+    itemsArray.push(item)
+    console.log(itemsArray)
+}
 
-// 8. Declare a function name removeItem. It takes an index parameter and it returns an array after removing an ite
+// 8. Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item.
+
+const removeItem = function (index) {
+    const itemsArray = ['orange', 'apple', 'blueberry']
+    itemsArray.splice(index, 1)
+    console.log(itemsArray)
+}
+
 
 // 9. Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
 
+const evensAndOdds = function (integer) {
+    let odds = 0
+    let evens = 0
+
+    const integerString = integer.toString()
+    const integerArray = integerString.split('')
+    for (let i = 0; i < integerArray.length; i++) {
+       if (integerArray[i]%2 === 0) {
+        evens++
+       } else {odds++}
+    }
+    console.log("odds: " + odds + " evens: " + evens)
+}
+
+
 // 10. Write a function which takes any number of arguments and return the sum of the arguments
 
+const sum = function(...arguments) {
+    const numArray = Array.from(arguments)
+
+    let total = 0
+    for (let i =0; i < numArray.length; i++) {
+        total += numArray[i]
+    }
+    console.log(total)
+}
+
+
 // 11. Declare a function name userIdGenerator. When this function is called it generates seven character id. The function return the id.
+
+const userIdGenerator = function () {
+    let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let counter = 0;
+    while (counter < 7) {
+      result += characters.charAt(Math.floor(Math.random() * characters.length));
+      counter += 1;
+    }
+    console.log(result)
+}
