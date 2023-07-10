@@ -3,8 +3,6 @@ import { createRoot } from 'react-dom/client';
 import './index.css'
         
       const explanation = 'This is a test app to practise React.'
-      const name = 'Bronwyn'
-      const date = 'July 10th, 2023'
       const techs = ['HTML', 'CSS', 'JavaScript', 'React', 'SQL']
       const images = ["/images/html_logo.png", "/images/css_logo.png", "/images/react_logo.png"]
       const techsFormatted = techs.map((tech) => <li className='techs' key={tech}>{tech}</li>)
@@ -21,7 +19,6 @@ import './index.css'
         </header>
         )   
 
-    
 
       // JSX element, main
       const main = (
