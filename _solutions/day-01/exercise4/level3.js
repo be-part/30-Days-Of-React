@@ -18,13 +18,10 @@ const userIdGeneratedByUser = function (characterPrompt, totalIdPrompt) {
     }
 }
 
-
-// 2. Write a function generateColors which can generate any number of hexa or rgb colors.
-
+// 2. Write a function generateColors which can generate any number of hex or rgb colors.
 const generateColors = function (type, number) {
 
     const hexCharacters = '0123456789abcdef'
-
 
     if (type === 'hex') {
         let total = 0;
@@ -57,7 +54,6 @@ const generateColors = function (type, number) {
                         let parsedNumber = parseInt(result) 
                         resultArray.push(parsedNumber)
                         setOfThree +=1;
-            
             }
             console.log("rgb(" + resultArray + ")") 
             total +=1;
