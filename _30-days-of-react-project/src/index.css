@@ -148,6 +148,7 @@ ul li {
 
 .subscribe-form input {
     margin: 8px;
+    padding: 10px;
     width: 160px;
     height: 40px;
     border-radius: 8px;
@@ -155,7 +156,7 @@ ul li {
 }
 
 .subscribe-form input::placeholder {
-    padding: 10px;
+    margin: 8px;
 }
 
 .subscribe-form-button {
@@ -170,4 +171,36 @@ button {
     background-color: rgb(221, 76, 100);
     border-style: none;
     color: white;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #36a8f4; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+.hexadecimal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
