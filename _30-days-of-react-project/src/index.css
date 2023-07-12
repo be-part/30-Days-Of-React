@@ -27,12 +27,12 @@ body {
 
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 300;
 }
 
-h2,
-h3 {
+h2 {
+  font-size: 40px;
   font-weight: 300;
 }
 
@@ -63,6 +63,8 @@ ul li {
     font-style: italic;
 }
 
+/* Header Styling */
+
 .header-wrapper {
   display: flex;
   flex-direction: column;
@@ -71,7 +73,36 @@ ul li {
   text-align: center;
 }
 
-.main-wrapper {
+
+/* Nav Styling */
+.nav {
+  border:1px solid #a7abb3;
+  border-width:1px 0;
+  list-style:none;
+  text-align:center;
+  margin: 5px;
+}
+
+.nav-option {
+  display:inline-block;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 400;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+/* Example Portfolio Styling */
+/* .profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} */
+
+.user-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,7 +195,7 @@ ul li {
     align-self: center;
 }
 
-button {
+.subscribe-btn {
     width: 240px;
     height: 40px;
     border-radius: 8px;
@@ -180,7 +211,6 @@ button {
   margin-bottom: 15px;
 }
 
-/* The close button */
 .closebtn {
   margin-left: 15px;
   color: white;
@@ -192,15 +222,65 @@ button {
   transition: 0.3s;
 }
 
-/* When moving the mouse over the close button */
 .closebtn:hover {
   color: black;
+}
+
+
+/* Colour-Generator Styling */
+
+.colour-generator-wrapper {
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .hexadecimal {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  align-content: center;
   justify-content: center;
   text-align: center;
+}
+
+.grid-item {
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.colour-btn {
+  margin: 5px;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: rgb(230, 156, 46);
+  border-style: none;
+  color: white;
+  font-size:x-large;
+}
+
+.colour-input {
+margin: 5px;
+width: 70px;
+height: 50px;
+font-size:x-large;
+text-align: center;
+}
+
+.colour-form {
+  margin: 5px;
+}
+
+.colour-label {
+  margin: 5px;
+  font-size: x-large;
 }
