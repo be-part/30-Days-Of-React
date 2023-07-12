@@ -41,12 +41,6 @@ header {
   padding: 10px;
 }
 
-p {
-  font-weight: 300;
-  padding: 10px;
-  margin: 5px;
-}
-
 ul {
   margin-left: 15px;
 }
@@ -94,13 +88,13 @@ ul li {
 
 
 /* Example Portfolio Styling */
-/* .profile-wrapper {
+.profile-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-} */
+}
 
 .user-wrapper {
   display: flex;
@@ -116,6 +110,12 @@ ul li {
    
 }
 
+.text {
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+}
+
 .skills-list li {
   display: inline-block;
   margin-left: 10px;
@@ -123,11 +123,12 @@ ul li {
 }
 
 .techs {
-    background-color:#61dbfb;
-    padding: 3px 6px 3px 6px;
+    background-color:#17c0eb;
+    padding: 8px 12px 8px 12px;
     color: white;
     font-weight: bold;
     border-radius: 5px;
+    font-size: 20px;
 }
 
 .images-wrapper {
@@ -156,6 +157,7 @@ ul li {
     width: 85%;
     margin-top: 15px;
     margin-bottom: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,7 +176,7 @@ ul li {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: small;
+    font-size: 30px;
 }
 
 .subscribe-form input {
@@ -184,15 +186,12 @@ ul li {
     height: 40px;
     border-radius: 8px;
     border-style: none;
+    font-size: 20px;
 }
 
 .subscribe-form input::placeholder {
     margin: 8px;
-}
-
-.subscribe-form-button {
-    margin-top: 10px;
-    align-self: center;
+    font-size: 20px;
 }
 
 .subscribe-btn {
@@ -202,6 +201,8 @@ ul li {
     background-color: rgb(221, 76, 100);
     border-style: none;
     color: white;
+    font-size: 20px; 
+    align-self: center;
 }
 
 .alert {
@@ -255,6 +256,14 @@ ul li {
   height: 250px;
   margin: 5px;
   border-radius: 4px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  font-weight: 400;
 }
 
 .colour-btn {
@@ -283,4 +292,40 @@ text-align: center;
 .colour-label {
   margin: 5px;
   font-size: x-large;
+}
+
+/* Colour-Coder Styling */
+
+.colour-coder-wrapper {
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.colour-coder-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.key {
+  text-align: left;
+  line-height: 1;
+  font-size: larger;
+  background-color:rgb(196, 241, 255);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.key-title {
+  font-weight: bold;
 }

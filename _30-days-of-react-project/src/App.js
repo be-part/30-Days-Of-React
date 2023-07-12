@@ -3,10 +3,10 @@ import { Routes, Route } from "react-router-dom";
 
 import Header from './Components/Header';
 import Nav from './Components/Nav'
-import PortfolioExample from './Components/PortfolioExample';
+import ExamplePortfolio from './Components/ExamplePortfolio';
 import Hexadecimal from './Components/ColourGenerator';
 import Home from './Components/Home';
-import ColourCoder from './Components/Colour-Coder';
+import ColourCoder from './Components/ColourCoder';
 import BarChart from './Components/BarChart';
 
 
@@ -17,7 +17,7 @@ function App() {
       <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/portfolio-example" element={<PortfolioExample />} />
+          <Route path="/example-portfolio" element={<ExamplePortfolio />} />
           <Route path="/colour-generator" element={<Hexadecimal />} />
           <Route path ="/colour-coding" element={<ColourCoder />} />
           <Route path ="/bar-chart" element={<BarChart />} />

@@ -10,9 +10,9 @@ const User = () => {
     <main>
       <div className='profile-wrapper'>
         <img className="profile-image" src="/images/blank_profile.png" alt="blank profile silhouette" />
-        <p className='bold'>YOUR NAME</p>
-        <p>Software Developer, UK</p>
-        <p className='bold'>SKILLS:</p>
+        <p className='text'><span className='bold'>YOUR NAME</span></p>
+        <p className='text'>Software Developer, UK</p>
+        <p className='text'><span className='bold'>SKILLS:</span></p>
         <ul className='skills-list'>{techsFormatted}</ul>
       </div>
     </main>

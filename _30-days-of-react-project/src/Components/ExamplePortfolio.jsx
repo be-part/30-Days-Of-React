@@ -2,7 +2,7 @@ import User from './User';
 import TechImages from './TechImages';
 import Subscribe from './Subscribe';
 
-const PortfolioExample = () => {
+const ExamplePortfolio = () => {
 
     return ( 
     <div className="user-wrapper">
@@ -18,4 +18,4 @@ const PortfolioExample = () => {
 
 }
 
-export default PortfolioExample
+export default ExamplePortfolio

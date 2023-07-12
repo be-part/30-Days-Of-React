@@ -6,7 +6,7 @@ const Subscribe = () => {
   return (
     <div className='form-wrapper'>
       <p className='sign-up-title'>SUBSCRIBE</p>
-      <p className='sign-up-text'>Sign-up with your email address to receive news and updates.</p>
+      <p className='text'>Sign-up with your email address to receive news and updates.</p>
 
       <form>
         <div className='subscribe-form'>
@@ -15,9 +15,9 @@ const Subscribe = () => {
           <input type='email' id='email' placeholder='Email' />
         </div>
 
-        <div className='subscribe-form-button'>
+        
           <Button />
-        </div>
+        
       </form>
     </div>
   );
