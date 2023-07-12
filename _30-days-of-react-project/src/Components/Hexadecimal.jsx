@@ -1,4 +1,5 @@
 const Hexadecimal = () => {
+
     const hexaColor = () => {
         let str = '0123456789abcdef'
         let color = ''
@@ -10,7 +11,11 @@ const Hexadecimal = () => {
       }
       
       return (
-        <div className="hexadecimal"> Your generated colour is: {hexaColor()}</div>
+        <div className="hexadecimal">
+        <div style={{ width: '200px', height: '30px', backgroundColor: hexaColor() }}></div>
+        <div style={{ width: '200px', height: '30px', backgroundColor: hexaColor() }}></div>
+        <div style={{ width: '200px', height: '30px', backgroundColor: hexaColor() }}></div>
+        </div>
       ) 
 }
 
