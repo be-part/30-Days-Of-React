@@ -18,7 +18,7 @@ body {
 }
 
 
-.App-light  {
+.App-Light  {
   background-color: white;
   color: black;
   min-height: 100vh;
@@ -33,7 +33,7 @@ body {
   }
 }
 
-.App-dark  {
+.App-Dark  {
   background-color: black;
   color: white;
   min-height: 100vh;
@@ -42,6 +42,66 @@ body {
   }
   .header-title {
     background-color: #253c86;
+  }
+  .nav-option {
+    color: white;
+  }
+}
+
+.App-Morning  {
+  background-color: #73839D;
+  color: rgb(0, 0, 0);
+  min-height: 100vh;
+  .key {
+    background-color: #ABA195;
+  }
+  .header-title {
+    background-color: #ABA195;
+  }
+  .nav-option {
+    color: black;
+  }
+}
+
+.App-Noon  {
+  background-color: #0C7AC0;
+  color: white;
+  min-height: 100vh;
+  .key {
+    background-color: #FFA588;
+  }
+  .header-title {
+    background-color: #FFA588;
+  }
+  .nav-option {
+    color: white;
+  }
+}
+
+.App-Evening  {
+  background-color: #B47489;
+  color: rgb(0, 0, 0);
+  min-height: 100vh;
+  .key {
+    background-color: #2E2552;
+  }
+  .header-title {
+    background-color: #2E2552;
+  }
+  .nav-option {
+    color: white;
+  }
+}
+
+.App-Night  {
+  background-color: #121122;
+  color: white;
+  min-height: 100vh;
+  .key {
+    background-color: #0F0E14;
+  }
+  .header-title {
+    background-color: #0F0E14;
   }
   .nav-option {
     color: white;
@@ -83,6 +143,11 @@ h1 {
 
 h2 {
   font-size: 40px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 35px;
   font-weight: 300;
 }
 
@@ -399,4 +464,11 @@ ul li {
   width: 50%;
   border-radius: 4px;
   font-size:x-large;
+}
+
+/* Seasons styling */
+
+.season-image {
+  border-radius: 6px;
+  margin: 5px;
 }

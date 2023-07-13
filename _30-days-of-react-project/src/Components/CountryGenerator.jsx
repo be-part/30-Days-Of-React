@@ -30,7 +30,7 @@ const CountryGenerator = () => {
                 <h3>{country.name}</h3>
                 <p>Capital: {country.capital}</p>
                 <p>Languages: {country.languages}</p>
-                <p>Population: {country.population}</p>
+                <p>Population: {country.population.toLocaleString()}</p>
                 <p>Currency: {country.currency}</p>
             </div>
 

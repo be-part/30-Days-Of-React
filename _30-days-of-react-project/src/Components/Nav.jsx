@@ -8,7 +8,8 @@ function Nav() {
       <div className="nav-style"><Link to="/colour-generator" className="nav-option">Colour Generator</Link></div>
       <div className="nav-style"><Link to="/colour-coding" className="nav-option">Colour Coding</Link></div>
       <div className="nav-style"><Link to="/bar-chart" className="nav-option">Bar Chart</Link></div>
-      <div className="nav-style-last"><Link to="/country-generator" className="nav-option">Country Generator</Link></div>
+      <div className="nav-style"><Link to="/country-generator" className="nav-option">Country Generator</Link></div>
+      <div className="nav-style-last"><Link to="/season" className="nav-option">Seasons</Link></div>
     </nav>
   );
 }
