@@ -37,13 +37,13 @@ const ColourCoder = () => {
   };
 
   return (
-    <div className='colour-coder-wrapper'>
+    <div className='wrapper'>
       <h2>Colour Coder</h2>
 
       <form className="colour-form" onSubmit={handleSubmit}>
         <label htmlFor="quantity" className="colour-label" >Enter a number between 1 and 100:</label>
         <input htmlFor="quantity" placeholder="0" className="colour-input" type="number" min="1" max="100" required value={number} onChange={(e) => setNumber(e.target.value)} />
-        <button className="colour-btn" type="submit">Generate!</button>
+        <button className="btn" type="submit">Generate!</button>
       </form>
 
       <div className="key">

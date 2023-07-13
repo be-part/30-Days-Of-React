@@ -5,8 +5,10 @@ import Subscribe from './Subscribe';
 const ExamplePortfolio = () => {
 
     return ( 
-    <div className="user-wrapper">
+    <div className="wrapper">
     <h2>Example Portfolio</h2>
+
+    
 
     <User />
     <TechImages />

@@ -8,7 +8,7 @@ const techsFormatted = techs.map((tech) => (
 const User = () => {
   return (
     <main>
-      <div className='profile-wrapper'>
+      <div className='wrapper'>
         <img className="profile-image" src="/images/blank_profile.png" alt="blank profile silhouette" />
         <p className='text'><span className='bold'>YOUR NAME</span></p>
         <p className='text'>Software Developer, UK</p>

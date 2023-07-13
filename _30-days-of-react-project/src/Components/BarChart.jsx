@@ -4,10 +4,10 @@ const BarChart = () => {
     
     return (
      
-        <div className='header-wrapper'>
+        <div className='wrapper'>
           <h2>Bar Chart</h2>
           <h3 className="bar-title" >World Population</h3>
-          <p className="bar-explanation" >Ten most populated countries.</p>
+          <p className="explanation" >Ten most populated countries.</p>
           <ul>
           {tenHighestPopulation.map((country, index) => {
             return (

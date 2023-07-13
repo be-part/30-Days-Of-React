@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0 0 10px 0px;
+  margin: 0;
 }
 
 html,
 body {
+  min-height: 100vh;
   line-height: 1.5;
   font-family: "Montserrat";
   font-weight: 300;
@@ -16,13 +17,62 @@ body {
   min-height: 100%;
 }
 
-.header-wrapper,
-.main-wrapper,
-.images-wrapper,
-.form-wrapper {
+
+.App-light  {
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  .key {
+    background-color: #61dbfb;
+  }
+  .header-title {
+    background-color: #61dbfb;
+  }
+  .nav-option {
+    color: black;
+  }
+}
+
+.App-dark  {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  .key {
+    background-color: #253c86;
+  }
+  .header-title {
+    background-color: #253c86;
+  }
+  .nav-option {
+    color: white;
+  }
+}
+
+.theme-btn {
+  width: 80px;
+  height: 30px;
+  margin: 5px;
+  font-size: medium;
+}
+
+.theme-text {
+  font-size: larger;
+}
+
+header {
+  padding: 10px;
+}
+
+
+.wrapper {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 
@@ -34,15 +84,6 @@ h1 {
 h2 {
   font-size: 40px;
   font-weight: 300;
-}
-
-header {
-  background-color: #61dbfb;
-  padding: 10px;
-}
-
-ul {
-  margin-left: 15px;
 }
 
 ul li {
@@ -57,16 +98,38 @@ ul li {
     font-style: italic;
 }
 
-/* Header Styling */
+.btn{
+  margin: 10px;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: rgb(230, 156, 46);
+  border: 2px solid rgb(230, 156, 46);
+  color: white;
+  font-size:x-large;
+}
 
-.header-wrapper {
+.btn:hover {
+  background-color: rgb(255, 255, 254);
+  border: 2px solid rgb(230, 156, 46);
+  color: rgb(230, 156, 46);
+  font-weight: bold;
+}
+
+.explanation {
+  font-size: x-large;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* Theme Setter Styling */
+.theme-setter {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-
 
 /* Nav Styling */
 .nav {
@@ -78,7 +141,6 @@ ul li {
 }
 
 .nav-option {
-  display:inline-block;
   padding: 10px;
   font-size: 22px;
   font-weight: 400;
@@ -86,24 +148,19 @@ ul li {
   text-decoration: none;
 }
 
+.nav-style {
+  padding: 10px;
+  display:inline-block;
+  border-right: 2px solid #a7abb3;
+
+}
+
+.nav-style-last {
+  padding: 10px;
+  display:inline-block;
+}
 
 /* Example Portfolio Styling */
-.profile-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.user-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 .profile-image {
     width: 200px;
     height: auto;
@@ -118,8 +175,7 @@ ul li {
 
 .skills-list li {
   display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin:10px;
 }
 
 .techs {
@@ -129,14 +185,6 @@ ul li {
     font-weight: bold;
     border-radius: 5px;
     font-size: 20px;
-}
-
-.images-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 .images-list li {
@@ -163,6 +211,9 @@ ul li {
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sign-up-title {
@@ -229,18 +280,6 @@ ul li {
 
 
 /* Colour-Generator Styling */
-
-.colour-generator-wrapper {
-  max-width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 .hexadecimal {
   display: flex;
   flex-direction: row;
@@ -265,17 +304,6 @@ ul li {
   font-size: x-large;
   font-weight: 400;
   color: white;
-}
-
-.colour-btn {
-  margin: 5px;
-  width: 150px;
-  height: 50px;
-  border-radius: 8px;
-  background-color: rgb(230, 156, 46);
-  border-style: none;
-  color: white;
-  font-size:x-large;
 }
 
 .colour-input {
@@ -309,18 +337,6 @@ ul li {
 }
 
 /* Colour-Coder Styling */
-
-.colour-coder-wrapper {
-  max-width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 .colour-coder-container {
   display: flex;
   flex-direction: row;
@@ -333,11 +349,12 @@ ul li {
 
 .key {
   text-align: left;
-  line-height: 1;
+  line-height: 1.5;
   font-size: larger;
-  background-color:rgb(196, 241, 255);
+  background-color:#61dbfb;
   padding: 10px;
   border-radius: 4px;
+  margin: 8px;
 }
 
 .key-title {
@@ -350,7 +367,7 @@ ul li {
   display:grid;
   column-gap: 10px;
   row-gap: 10px;
-  grid-template-columns: 300px 600px 100px;
+  grid-template-columns: 300px 600px 300px;
   justify-content: space-evenly;
   margin: 5px;
 }
@@ -372,8 +389,14 @@ ul li {
 
 }
 
-.bar-explanation {
-  font-size: x-large;
+/* Country Generator Styling */
+
+.country-container {
+  box-shadow: 0 0 5px #494949;
+  padding: 10px;
   margin: 5px;
-  padding: 5px;
+  height: auto;
+  width: 50%;
+  border-radius: 4px;
+  font-size:x-large;
 }
