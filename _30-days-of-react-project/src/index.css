@@ -352,6 +352,7 @@ ul li {
   row-gap: 10px;
   grid-template-columns: 300px 600px 100px;
   justify-content: space-evenly;
+  margin: 5px;
 }
 
 .bar-chart {
@@ -364,4 +365,15 @@ ul li {
   margin: 5px;
   font-size: x-large;
   font-weight: bold;
+}
+
+.bar-title {
+  font-size: 35px;
+
+}
+
+.bar-explanation {
+  font-size: x-large;
+  margin: 5px;
+  padding: 5px;
 }
