@@ -264,6 +264,7 @@ ul li {
   justify-content: center;
   font-size: x-large;
   font-weight: 400;
+  color: white;
 }
 
 .colour-btn {
@@ -278,11 +279,11 @@ ul li {
 }
 
 .colour-input {
-margin: 5px;
-width: 70px;
-height: 50px;
-font-size:x-large;
-text-align: center;
+  margin: 5px;
+  width: 70px;
+  height: 50px;
+  font-size:x-large;
+  text-align: center;
 }
 
 .colour-form {
@@ -290,6 +291,19 @@ text-align: center;
 }
 
 .colour-label {
+  margin: 5px;
+  font-size: x-large;
+}
+
+.code-input {
+  margin: 5px;
+  width: 200px;
+  height: 50px;
+  font-size:x-large;
+  text-align: center;
+}
+
+.code-label {
   margin: 5px;
   font-size: x-large;
 }
@@ -327,5 +341,27 @@ text-align: center;
 }
 
 .key-title {
+  font-weight: bold;
+}
+
+/* Bar Chart Styling */
+
+.single-country {
+  display:grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: 300px 600px 100px;
+  justify-content: space-evenly;
+}
+
+.bar-chart {
+  height: 50px;
+  background-color: orangered;
+  border-radius: 4px;
+}
+
+.country-info {
+  margin: 5px;
+  font-size: x-large;
   font-weight: bold;
 }
