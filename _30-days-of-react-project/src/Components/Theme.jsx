@@ -28,7 +28,7 @@ function Theme () {
     return (<>
     <div className="theme-setter">
     <label htmlFor="theme" className="code-label" >Mode: {theme}</label>
-      <select className="code-input" htmlFor="theme" onChange={(e) => handleEvent(e.target.value)}>
+      <select className="theme-input" htmlFor="theme" onChange={(e) => handleEvent(e.target.value)}>
         <option className="value-input" value="light">Light</option>
         <option className="value-input" value="dark">Dark</option>
         <option className="value-input" value="auto">Auto</option>

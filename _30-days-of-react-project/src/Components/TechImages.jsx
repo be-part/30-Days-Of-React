@@ -9,7 +9,7 @@ const TechImages = () => {
   ));
 
   return (
-    <div className='wrapper'>
+    <div >
       <p className='text'><span className='bold'>Front End Technologies</span></p>
       <ul className='images-list'>{techsImages}</ul>
     </div>
