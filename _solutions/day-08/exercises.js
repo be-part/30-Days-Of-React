@@ -24,7 +24,7 @@ setState which is the second parameter of the useState hook.
 
 Exercises: Level 2: 
 Use React state to change the background of the portfolio page. ✓
-Develop a random country selector that selects your holiday destination.
+Develop a random country selector that selects your holiday destination. ✓
 
 */
 
