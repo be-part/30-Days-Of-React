@@ -3,21 +3,25 @@ const Seasons = () => {
     const currentDate = new Date();
     const month = currentDate.getMonth()+1
 
+    const autumnImage = require("../assets/images/autumn.jpg")
+    const winterImage = require("../assets/images/winter.jpg")
+    const springImage = require("../assets/images/spring.jpg")
+    const summerImage = require("../assets/images/summer.jpg")
 
     const checkSeason = function (month) {
        
         if (month >= 9 && month <12) {
            return {currentSeason: 'Autumn',
-                    img: '/images/autumn.jpg'}
+                    img: autumnImage}
         } else if (month === 12 || month === 1 || month === 2) {
            return {currentSeason: 'Winter',
-                    img: '/images/winter.jpg'}
+                    img: winterImage}
         } else if (month >=3 && month <6) {
             return {currentSeason: 'Spring',
-                    img: '/images/spring.jpg'}
+                    img: springImage}
         } else if (month >=6 && month <9) {
            return {currentSeason: 'Summer',
-                    img: '/images/summer.jpg'} }
+                    img: summerImage} }
     }
 
     return (

@@ -1,6 +1,6 @@
 const TechImages = () => {
 
-  const images = ["/images/html_logo.png", "/images/css_logo.png", "/images/react_logo.png"];
+  const images = [require("../assets/images/html_logo.png"), require("../assets/images/css_logo.png"), require("../assets/images/react_logo.png")];
   
   const techsImages = images.map((image) => (
     <li className='images' key={image}>
