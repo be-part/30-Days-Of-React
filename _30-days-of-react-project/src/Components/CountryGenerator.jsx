@@ -11,11 +11,11 @@ const CountryGenerator = () => {
         flag: 'https://restcountries.eu/data/gbr.svg',
         currency: 'British pound',
       })
-
+    
     const handleEvent =() => {
         setCountry(countriesData[numberGenerator])
     }
-
+   
     return (
      
         <div className='wrapper'>
@@ -33,10 +33,11 @@ const CountryGenerator = () => {
                 <p>Population: {country.population.toLocaleString()}</p>
                 <p>Currency: {country.currency}</p>
             </div>
-
+          
         </div>
      
     );
+    
   };
   
   export default CountryGenerator;
