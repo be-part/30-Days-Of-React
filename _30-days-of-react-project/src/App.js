@@ -13,11 +13,12 @@ import { themeContext } from "./Contexts/themeContext";
 import Theme from './Components/Theme';
 import CountryGenerator from './Components/CountryGenerator';
 import Seasons from './Components/Seasons';
+import EventHandling from './Components/EventHandling';
 
 function App() {
 
 
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('Light')
 
   return (
     <div className={`App-${theme}`}>
@@ -33,6 +34,7 @@ function App() {
           <Route path ="/bar-chart" element={<BarChart />} />
           <Route path ="/country-generator" element={<CountryGenerator />} />
           <Route path ="/season" element={<Seasons />} />
+          <Route path ="/event-handling" element={<EventHandling />} />
         </Routes>
         </themeContext.Provider>
     </div>
