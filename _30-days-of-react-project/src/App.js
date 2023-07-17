@@ -14,6 +14,7 @@ import Theme from './Components/Theme';
 import CountryGenerator from './Components/CountryGenerator';
 import Seasons from './Components/Seasons';
 import EventHandling from './Components/EventHandling';
+import Form from './Components/Form';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
           <Route path ="/country-generator" element={<CountryGenerator />} />
           <Route path ="/season" element={<Seasons />} />
           <Route path ="/event-handling" element={<EventHandling />} />
+          <Route path ="/form" element={<Form />} />
         </Routes>
         </themeContext.Provider>
     </div>

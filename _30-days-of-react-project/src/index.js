@@ -15,6 +15,7 @@ import './assets/CSS/nav.css';
 import './assets/CSS/overlay.css';
 import './assets/CSS/seasons.css';
 import './assets/CSS/theme.css';
+import './assets/CSS/form.css';
 
 const rootElement = ReactDOM.createRoot(document.getElementById('root'));
 

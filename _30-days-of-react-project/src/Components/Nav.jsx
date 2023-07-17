@@ -10,7 +10,8 @@ function Nav() {
       <div className="nav-style"><Link to="/bar-chart" className="nav-option">Bar Chart</Link></div>
       <div className="nav-style"><Link to="/country-generator" className="nav-option">Country Generator</Link></div>
       <div className="nav-style"><Link to="/season" className="nav-option">Seasons</Link></div>
-      <div className="nav-style-last"><Link to="/event-handling" className="nav-option">Event Handling</Link></div>
+      <div className="nav-style"><Link to="/event-handling" className="nav-option">Event Handling</Link></div>
+      <div className="nav-style-last"><Link to="/form" className="nav-option">Form</Link></div>
     </nav>
   );
 }
