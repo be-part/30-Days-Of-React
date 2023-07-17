@@ -1,4 +1,6 @@
 /* 
+Exercises: Level 1
+
 What is the importance of form?
 Forms are used to collect data from users.
 
@@ -73,5 +75,8 @@ The main purpose to validation is to get a desired data from users. In addition,
 What are event types do you use to validate an input?
 Validation can be done in client side or sever side. As React is front-end, we will be using client-side.
 
+
+Exercises: Level 2
+Validate the form given above. ✓
 
 */
